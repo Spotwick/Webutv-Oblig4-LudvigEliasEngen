@@ -169,21 +169,248 @@
         </header>
 
         <main>
-            <h2>Analyse</h2>
+            <h1>Analyse</h1>
             <p>Nedenfor kommer jeg til å gjøre en analyse av nettsidens SEO og UU forbedringsmuligheter. Jeg kommer til å vise før og etter bilder av hvordan tiltakene har endret siden og noen forklaringer rundt endringene jeg gjør</p>
-            <p>Hver av de tre sidene har sin egen seksjon nedenfor. Hvor de forskjellige analysene tar sted, med før og etter bilder og forklaringer</p>
             
 
-            <section id="index-analyse">
+            <section id="nokkelord-analyse">
+                <h2>Nøkkelord og søkeord</h2>
+                <article id="lopesko-piggsko-nokkelord">
+                    <h3>Løpesko og piggsko</h3>
+                    <p>Løpesko og piggsko er viktige nøkkelord for nettsiden min. Det danner kjernen av nettsiden min hvor det er det vi selger.</p>
+                    <img src="img/lopesko-piggsko.png" alt="analyse av lopesko og piggsko, google trends">
+                </article>
+                <article id="kjente-merker-nokkelord">
+                    <h3>Adidas og Nike</h3>
+                    <p>Jeg valgte å ha kampanje i ett av de mest kjente merkene i norge Adidas. Jeg har også Nike og Adidas høyt oppe på siden siden de er velkjente skomerker i Norge. Her er en sammenligning, av tre av merkene hvor du vil se hvorfor jeg valkte adidas og Nike:</p>
+                    <img src="img/adidas-nike.png" alt="analyse av kjente merker, google trends">
+                </article>
+                <article id="tilbud-salg-nokkelord">
+                    <h3>Tilbud vs Salg</h3>
+                    <p>Jeg måtte velge om jeg ville bruke ordet salg eller tilbud, etter å se på google trends, så er det ganske lett å se at ordet salg, får flere treff</p>
+                    <img src="img/tilbud-salg.png" alt="analyse av ordene tilbud og salg, google trends">
+                </article>
+                <article id="generelle-tanker-nokkelord">
+                    <h3>Kjente sko</h3>
+                    <p>Utenom de nøkkeordene jeg snakke om tidligere, så er det ikke mange spesifikke nøkkelord for nettsiden min. Søkeordene som kommer til å bli mest brukt,
+                        er nok allerede eksisterende piggsko/joggesko som folk søker etter. Kanskje de søker på ett nytt lansert nike løpesko, 
+                        da vil de forhåpentligvis få opp nettsiden min som ett av forslagene. Derfor blir sko navn viktige nøkkelord for min side.
+                    </p>
+                </article>
+            </section>
+
+            
+            <section id="SEO-analyse">
+                <h2>SEO analyse</h2>
+                <section id="lighthouse">
+                    <h3>Lighthouse</h3>
+                    <p>Ved å analysere siden gjennom google sin innebygde SEO analyserer, så kan vi få en vurdering på nettsidens SEO,
+                        Jeg tester alle sidene gjennom lighthouse, men bare den første kommer til å bli testet med både mobil og desktop. De to andre blir bare testet på desktop.
+                    </p>
+                    <article id="lighthouse-index">
+                        <h4>Index</h4>
+                        <p>Nedenfor er de relevante punktene som ble tatt opp av lighthouse sin analyse</p>
+                        <img src="img/index_lighthouse_pre.png" alt="lighthouse analyse av index sammendrag">
+                        <p>innenfor seo resultater</p>
+                        <img src="img/index_lighthouse_SEO_pre.png" alt="lighthouse seo resultater av index">
+                        <p>På bildet over, så ser vi at analysen sier at SEO scoren til index.html er på 90. 
+                            Dette er svært bra, og betyr at det ikke er mange store punkter vi har feilet på.
+                            UU resultatet er litt dårligere, med en score på 84, men det er heller ikke veldig dårlig.
+                        </p>
+                        <p>Det som feilet når det gjelder SEO, er at jeg ikke har noen meta beskrivelse på nettsiden, dette er veldig lett å fikse.
+                            Nettsiden har også litt feil størrelse på interaktive elementer, som kan bety at når noen skal trykke på en link, så trykker de på feil link.
+                        </p>
+                        <img src="img/index_lighthouse_UU_pre_1.png" alt="lighthouse index UU resultater 1">
+                        <p>Lighthouse liker ikke farge kontrastene på produktfremvisning elementene. Mer spesifikt rødt på grått. Dette kan lett fikses ved å endre litt på fargene</p>
+                        <img src="img/index_lighthouse_UU_pre_2.png" alt="lighthouse index UU resultater 2">
+                        <p>Reagerer også på at linker må ha farge for å være gjenkjennbare</p>
+                        <img src="img/index_lighthouse_UU_pre_3.png" alt="lighthouse index UU resultater 3">
+                        <p>Liker ikke at headerene min ikke er i sekvensiell rekkefølge. altså at jeg hopper over noen heeadere</p>
+                        <img src="img/index_lighthouse_pre_desk.png" alt="lighthouse desktop sammendrag">
+                        <p>Ovenfor ser vi resultatene til desktop versjonen. Den er svært lik den på mobil. Siden de er så like, så gjør jeg bare analyse på desktop versjonen fremover.</p>
+                    </article>
+
+                    <article id="lighthouse-piggsko">
+                        <h4>Piggsko</h4>
+                        <p>
+                            Nedenfor er lighthouse analysen for piggsko.html siden.
+                        </p>
+                        <img src="img/piggsko_lighthouse_pre.png" alt="lighthouse piggsko sammendrag">
+                        <p>Ovenfor er poengsummene til piggsko siden. Den fikk veldig bra score. 91 i UU og 90 i SEO</p>
+                        <img src="img/piggsko_lighthouse_SEO_1_pre.png" alt="lighthouse piggsko SEO 1">
+                        <p>Som tidligere hadde jeg ikke laget en meta beskrivelse for piggsko.html heller.</p>
+                        <img src="img/piggsko_lighthouse_SEO_2_pre.png" alt="lighthouse piggsko SEO 2">
+                        <p>
+                            Bare for å vise hva siden fikk til, så viser jeg også til de sukksessfulle testene lighthouse gjorde, 
+                            som nevner diverse ting som
+                            title, deskriptive linker, alt atributter på bilder, osv.
+                        </p>
+                        <img src="img/piggsko_lighthouse_UU_pre.png" alt="lighthouse piggsko UU">
+                        <p>Siden mangler label på et form element, søkebaren. Vi har også fortsatt feilen med ikke sekvensielle header tags.</p>
+
+
+                    </article>
+
+                    <article id="lighthouse-produkt">
+                        <h4>produkt</h4>
+                        <p>Nedenfor er lighthouse analysen for produkt.html siden.</p>
+                        <img src="img/produkt_lighthouse_pre.png" alt="lighthouse produkt sammendrag">
+                        <p>Vi ser nå at poengsummene er noe dårligere for produkt siden, med en SEO på 80 og UU på 81</p>
+                        <img src="img/produkt_lighthouse_SEO_pre.png" alt="lighthouse produkt SEO">
+                        <p>
+                            Den dårlige SEO scoren skyder i at det nok engang ikke er en metabeskrivelse, og at linkene til til slideshowet mitt gjørt at 
+                            nettsiden kanskje ikke kan "crawles"
+                        </p>
+                        <img src="img/produkt_lighthouse_UU_pre.png" alt="lighthouse produkt UU">
+                        <p>
+                            Når det gjelder UU, så likte ikke lighthouse at knappene mine bare heter button, som gjør det vanskeliger for skjermlesere å forstå innholdet
+                        </p>
+                    </article>
+                </section>
+            </section>
+            
+            <section id="UU-analyse">
+                <h2>UU analyse</h2>
+                <h3>Webaim</h3>
+                <p>Nedenfor kommer jeg til å teste siden gjennom Webaims UU analyse nettside.</p>
+                <article id=webaim-index>
+                    <h4>Index</h4>
+                    <img src="img/webaim-index.png" alt="webaim index analyse">
+                    <p>
+                        Ved hoved siden så har vi en rød error, dette skylder søkefeltet mitt, som ikke har noen label. 
+                        Vi har også en del kontrast errorer. Kontrast errorene, skylder de røde tekstene mine som skal si om en vare er på tilbud eller ikke. 
+                        Det finnes også en del alerts, disse alertsene skylder i at produkt fremvisningene mine består av flere linker inne i hverandre, 
+                        hvorav jeg egentlig bare kunne hatt en link for hele. Den syntes derfor dette er “redundant links”. Alle disse feilene er ganske lette å fikse.
+                    </p>
+                </article>
+
+                <article id="webaim-piggsko">
+                    <h4>Piggsko</h4>
+                    <img src="img/webaim-piggsko.png" alt="webaim piggsko analyse">
+                    <p>
+                        Igjen så er det en error ved søkebaren i headeren, siden begge sidene har samme header. 
+                        Dette vil også være tilfelle for produkt siden. Errorene jeg får er igjen redudante linker, 
+                        men også at jeg har hoppet over noen headere. 
+                        Jeg har ikke brukt H1, eller eller h4. Men har brukt alle andre headere, 
+                        så den vil at jeg skal bruke headere i sekvensiell rekkefølge og ikke hoppe over noen.
+                    </p>
+                </article>
+
+                <article id="webaim-produkt">
+                    <h4>Produkt</h4>
+                    <img src="img/webaim-produkt.png" alt="webaim produkt analyse">
+                    <p>
+                        Ved produkt siden så har jeg litt flere errors. Igjen så har vi søkefelt erroren. 
+                        Vi har også en error for hver av knappene som skal representere farge valg på sko. De er tomme knapper, som jeg må fikse. 
+                        Jeg har igjen hoppet over noen header nivåer, og har noen redundante linker som er i headeren. 
+                        Den liker også ikke alt teksten på bildene mine, siden de inneholder ordet “image” som egentlig er selvforklart.
+                    </p>
+                    <img src="img/webaim-knapper.png" alt="webaim knapper error">
+                    <p>ovenfor er bildet av knappene som feilet</p>
+                </article>
+
+            </section>
+
+            <section id="chatGPT-analyse">
+                <h2>ChatGPT analyse av SEO og UU</h2>
+                <p>Nedenfor er SEO og UU analyse gjort gjennom chatgpt. Jeg sendte inn prompten: Her er koden for min Index.html side. Vurder koden fra et SEO og UU perspektiv:</p>
+
                 
+                <article id="chatgpt-index">
+                    <h3>index.html</h3>
+                    <h4>SEO Perspektiv</h4>
+                    <img src="img/gpt-index-seo.png" alt="chatgpt index seo analyse">
+                    <h4>UU (Universell Utforming) Perspektiv</h4>
+                    <img src="img/gpt-index-UU.png" alt="chatgpt index uu analyse">
+                </article>
+
+                <article id="chatgpt-piggsko">
+                    <h3>piggsko.html</h3>
+                    <h4>SEO Perspektiv</h4>
+                    <img src="img/gpt-piggsko-seo.png" alt="chatgpt piggsko seo analyse">
+                    <h4>UU (Universell Utforming) Perspektiv</h4>
+                    <img src="img/gpt-piggsko-uu.png" alt="chatgpt piggsko uu analyse">
+                </article>
+
+                <article id="chatgpt-piggsko">
+                    <h3>produkt.html</h3>
+                    <h4>SEO Perspektiv</h4>
+                    <img src="img/gpt-produkt-seo.png" alt="chatgpt produkt seo analyse">
+                    <h4>UU (Universell Utfroming) Perspektiv</h4>
+                    <img src="img/gpt-produkt-uu.png" alt="chatgpt produkt uu analyse">
+                </article>
+
+                <p>Alt i alt, så virker chatgpt å være ganske fornøy med sidene mine sin SEO og UU. Den nevner såklart mangler på metabeskrivelse, som også lighthouse og webaim gjorde.</p>
 
             </section>
-            <section id="piggsko-analyse">
 
+            <section id="sammenligning">
+                <h2>Sammenligning av ChatGPT, Lighthouse og Webaim</h2>
+                <p>
+                    Nedenfor er en sammenligning av de tre analyse verktøyene jeg har benyttet. 
+                    I tabellen vil de stå korte punkter om hva de har eller ikke har med i resultatet sitt
+                </p>
+                <table>
+                    <tr>
+                        <th>ChatGPT</th>
+                        <th>Ligthouse</th>
+                        <th>Webaim</th>
+                    </tr>
+                    <tr>
+                        <td>Mer deskriptiv title</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Manglende meta description</td>
+                        <td>Manglende meta description</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Header elementer ikke i sekvensiell rekkefølge</td>
+                        <td>Header elementer ikke i sekvensiell rekkefølge</td>
+                    </tr>
+                    <tr>
+                        <td>Keyword stuffing</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Contrast ratio ikke stor nok</td>
+                        <td>Contrast ratio ikke stor nok</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Mangler label i søkefelt</td>
+                        <td>Mangler label i søkefelt</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Noen interaktive elementer er feil størrelse</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Noen linker er redundante</td>
+                    </tr>
+                </table>
+                <p>
+                    Vi ser i sammenligningen at chatGPT er bedre på å finne på kreative løsninger på ting, som title foreslag. Alle tre den mest soleklare feilen, manglende meta description.
+                    Både lighthouse og Webaim klager på header elementene mine som ikke er sekvensielle, og finner begge kontrast ratio feilen. Jeg sendte ikke css koden til chatgpt, 
+                    så det kan forklare hvorfor den ikke fant kontrast feilen. Men chatgpt burde ha funnet den manglende labelen i søkefeltet, som de andre gjorde, siden dette er i html koden. 
+                    Chatgpt kommer også med de litt mindre kjente forslagene, som å huske på keyword stuffing. Keyword stuffing er å stappe siden full av keywords sånn at nettsidens SEO blir ranket høyere av søkemotorer.
+                    Hvis nettsiden din gjør dette, så kan den blir permanent fjernet fra populære søkemotorer.
+                </p>
             </section>
-            <section id="produkt-analyse">
 
-            </section>
+
+
+
+
+
         </main>
         <footer>
             <section id=kontakt-oss>
@@ -222,7 +449,7 @@
             }
         })
 
-        // shopping cart
+        // For the shopping cart
         let y = document.querySelector("#handlekurv-inside");
         document.getElementById("cart-nav").addEventListener("click", (e) => {
             if (y.className === "navbar") {
@@ -231,6 +458,7 @@
                 y.className = "navbar";
             }
         });
+
     </script>
 </body>
 </html>

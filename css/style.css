@@ -423,6 +423,15 @@ figure.product-image {
     color: white;
 }
 
+table, th, td{
+    border: 1px solid black;
+    height: 1.5rem;
+}
+
+table{
+    width:100%;
+}
+
 @media only screen and (min-width: 600px) {
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
