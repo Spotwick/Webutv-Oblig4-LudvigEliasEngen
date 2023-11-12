@@ -1,7 +1,7 @@
 /* setter globale variabler for fargekodene til nettsiden */
 :root {
     --red: #6B0000;
-    --grey: #D9D9D9;
+    --grey: #949494;
     --black: #202020;
 }
 
@@ -240,10 +240,11 @@ figure.product-image {
     display: block;
     margin: 0.5rem;
     color: #202020;
+    text-decoration: none;
 }
 
 .caption span{
-    color: red;
+    color: #610000;
 
 }
 
@@ -255,6 +256,11 @@ figure.product-image {
 
 .produkt-fremvisning img{
     width: 18rem;
+}
+
+#anmeldelse p a{
+    color: blue;
+    text-decoration: underline;
 }
 
 #anmeldelse a{
